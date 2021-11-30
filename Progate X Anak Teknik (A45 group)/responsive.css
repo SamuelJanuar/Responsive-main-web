@@ -1,0 +1,52 @@
+@media (max-width: 1000px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    header-container {
+        width: 100%;
+        display: grid;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .main-container {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .main-container foto{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.main-container .foto:hover{
+    transform: scale(1.2) rotate(15deg);
+    border-radius: 1rem;
+}
+
+.main-container .logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5em;
+    margin-left: 1em;
+}
+
+@media (max-width: 670px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        width: 100%;
+    }
+    
+    .main-container {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
